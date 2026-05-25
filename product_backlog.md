@@ -9,6 +9,13 @@ Users can log into the app using username and password.
 
 ---
 
+### Error Feedback on Login
+Labels: enhancement, priority: high
+
+Users should receive a clear error message when they enter incorrect username or password so they understand why login failed and can try again.
+
+---
+
 ### User Registration
 Labels: enhancement, priority: high
 
