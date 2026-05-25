@@ -1,7 +1,7 @@
 # Product Backlog - Habit Tracker App
 
 This backlog contains all user stories for the Habit Tracker App.  
-It is organized by exercises and prioritized to guide development.
+It is organized by exercises and feature sections to guide development and sprint planning.
 
 ---
 
