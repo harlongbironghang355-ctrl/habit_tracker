@@ -1,11 +1,11 @@
-# Habit Tracker App - Product Backlog (User Stories)
+# Habit Tracker App - Product Backlog
 
 ---
 
-## User Registration
+## Login / Registration
 
-**Title:**
-As a user, I want to register using email, username, password, age, and country so that I can create an account.
+### User Registration
+**As a user, I want to register with my email, username, password, age, and country so that I can create an account in the app.**
 
 **Acceptance Criteria:**
 1. User can enter email, username, password
@@ -13,14 +13,11 @@ As a user, I want to register using email, username, password, age, and country 
 3. Registration is successful
 
 **Priority:** High  
-**Story Points:** 5  
 
 ---
 
-## User Login
-
-**Title:**
-As a user, I want to log in using username and password so that I can access my account.
+### User Login
+**As a user, I want to log in using my username and password so that I can access my account.**
 
 **Acceptance Criteria:**
 1. User enters correct credentials
@@ -28,142 +25,217 @@ As a user, I want to log in using username and password so that I can access my 
 3. User is redirected to homepage
 
 **Priority:** High  
-**Story Points:** 5  
 
 ---
 
-## Profile Setup
-
-**Title:**
-As a user, I want to select age, country, and habits during signup so that my profile is personalized.
+### Login Error Feedback
+**As a user, I want to receive an error message if I enter wrong credentials so that I know login failed.**
 
 **Acceptance Criteria:**
-1. User selects age and country
-2. User selects habits during signup
-3. Data is saved successfully
+1. Error shown for invalid login
+2. User stays on login screen
+3. Message is clearly visible
 
 **Priority:** High  
-**Story Points:** 3  
 
 ---
 
-## Add Habit
+## Homepage
 
-**Title:**
-As a user, I want to add habits so that I can track my daily activities.
-
-**Acceptance Criteria:**
-1. User can add habit name
-2. Habit appears in list
-3. Habit is stored locally
-
-**Priority:** High  
-**Story Points:** 3  
-
----
-
-## Habit Color
-
-**Title:**
-As a user, I want to assign different colors to habits so that I can organize them visually.
+### Welcome Message
+**As a user, I want to see a personalized welcome message so that I feel recognized.**
 
 **Acceptance Criteria:**
-1. User selects color
-2. Color is saved
-3. UI updates with color
+1. User name displayed
+2. Updates after login
 
 **Priority:** Medium  
-**Story Points:** 3  
 
 ---
 
-## Swipe Actions
-
-**Title:**
-As a user, I want to swipe left to delete and swipe right to mark habit as done so that I can manage habits quickly.
+### Weekly Progress View
+**As a user, I want to see my weekly habit progress so that I can track performance.**
 
 **Acceptance Criteria:**
-1. Swipe left deletes habit
-2. Swipe right marks habit as done
+1. Shows completed habits
+2. Shows pending habits
+3. Updates daily
+
+**Priority:** Medium  
+
+---
+
+### Completed Habits Section
+**As a user, I want to see completed habits separately so that I can track achievements.**
+
+**Acceptance Criteria:**
+1. Completed habits displayed
+2. Moves when marked done
 3. UI updates instantly
 
-**Priority:** High  
-**Story Points:** 5  
+**Priority:** Low  
 
 ---
 
 ## Menu
 
-**Title:**
-As a user, I want a settings menu so that I can configure the app.
+### Navigation Menu
+**As a user, I want a menu to navigate between pages so that I can access all features easily.**
 
 **Acceptance Criteria:**
-1. Menu opens properly
+1. Menu opens correctly
 2. Navigation works
-3. Settings accessible
+3. All pages accessible
 
 **Priority:** Medium  
-**Story Points:** 3  
 
 ---
 
-## Edit Profile
-
-**Title:**
-As a user, I want to edit my personal information so that I can keep my profile updated.
+### Sign Out
+**As a user, I want to sign out so that I can securely exit my account.**
 
 **Acceptance Criteria:**
-1. User can edit name, age, country
-2. Changes are saved
-3. Updates reflect in app
+1. User logs out successfully
+2. Session cleared
+3. Redirect to login screen
 
-**Priority:** Medium  
-**Story Points:** 3  
+**Priority:** High  
 
 ---
 
-## Reports (Weekly / Monthly)
+## Profile Page
 
-**Title:**
-As a user, I want to view weekly and monthly reports so that I can track my progress.
+### View Profile Information
+**As a user, I want to view my personal details so that I can confirm my information.**
 
 **Acceptance Criteria:**
-1. User can switch weekly/monthly view
-2. Data is displayed correctly
-3. Charts/summary shown
+1. Name, age, country shown
+2. Data loads correctly
 
 **Priority:** Medium  
-**Story Points:** 5  
+
+---
+
+### Edit Profile Information
+**As a user, I want to update my personal details so that I can keep my profile updated.**
+
+**Acceptance Criteria:**
+1. User can edit fields
+2. Changes saved successfully
+3. Updated data reflected in app
+
+**Priority:** Medium  
+
+---
+
+## Habits Page
+
+### Add Habit
+**As a user, I want to add new habits so that I can track my daily activities.**
+
+**Acceptance Criteria:**
+1. User can enter habit name
+2. Habit saved locally
+3. Appears in list
+
+**Priority:** High  
+
+---
+
+### Delete Habit
+**As a user, I want to delete habits so that I can remove unwanted ones.**
+
+**Acceptance Criteria:**
+1. User can delete habit
+2. Removed from list
+3. UI updates instantly
+
+**Priority:** Medium  
+
+---
+
+### Habit Color Selection
+**As a user, I want to assign colors to habits so that I can organize them visually.**
+
+**Acceptance Criteria:**
+1. User selects color
+2. Color saved with habit
+3. UI reflects color
+
+**Priority:** Medium  
+
+---
+
+### Swipe Actions (Done/Delete)
+**As a user, I want to swipe left to delete and swipe right to mark habit as done so that I can manage habits quickly.**
+
+**Acceptance Criteria:**
+1. Swipe left deletes habit
+2. Swipe right marks done
+3. UI updates instantly
+
+**Priority:** High  
+
+---
+
+## Reports Page
+
+### Weekly Reports
+**As a user, I want to view weekly reports so that I can track my progress.**
+
+**Acceptance Criteria:**
+1. Shows weekly summary
+2. Displays completed habits
+3. Updates weekly
+
+**Priority:** Medium  
+
+---
+
+### Habit Visualization
+**As a user, I want to see charts of my habit progress so that I can identify trends.**
+
+**Acceptance Criteria:**
+1. Chart displays correctly
+2. Data is accurate
+3. UI is responsive
+
+**Priority:** Medium  
 
 ---
 
 ## Notifications
 
-**Title:**
-As a user, I want to enable notifications so that I get reminders for habits.
+### Enable Notifications
+**As a user, I want to enable notifications so that I receive habit reminders.**
 
 **Acceptance Criteria:**
-1. User can toggle notifications
-2. Notifications trigger at set times
-3. Settings are saved
+1. Toggle ON/OFF works
+2. Notifications scheduled
+3. Preferences saved
 
 **Priority:** Medium  
-**Story Points:** 3  
 
 ---
 
-## Logout
-
-**Title:**
-As a user, I want to log out so that I can securely exit my session.
+### Select Habit Notifications
+**As a user, I want to choose specific habits for notifications so that I only receive relevant reminders.**
 
 **Acceptance Criteria:**
-1. User clicks logout
-2. Session is cleared
-3. Redirect to login page
+1. User selects habits
+2. Only selected habits trigger notifications
+3. Settings saved
 
-**Priority:** High  
-**Story Points:** 2  
+**Priority:** Medium  
 
 ---
-Habit Tracker App - User Stories and Product Backlog
+
+### Set Notification Time
+**As a user, I want to set notification times so that I get reminders at the right time.**
+
+**Acceptance Criteria:**
+1. Morning/afternoon/evening options
+2. Notifications trigger correctly
+3. Settings persist
+
+**Priority:** Medium  
