@@ -1,33 +1,73 @@
 import 'package:flutter/material.dart';
 
-import 'screens/login_screen.dart';
-import 'screens/register_screen.dart';
+import 'features/auth/screens/login_screen.dart';
+import 'features/auth/screens/register_screen.dart';
+
 
 void main() {
+
   WidgetsFlutterBinding.ensureInitialized();
-  runApp(const HabittApp());
+
+  runApp(
+    const HabittApp(),
+  );
+
 }
 
+
+
 class HabittApp extends StatelessWidget {
-  const HabittApp({super.key});
+
+  const HabittApp({
+    super.key,
+  });
+
 
   @override
   Widget build(BuildContext context) {
+
     return MaterialApp(
+
       debugShowCheckedModeBanner: false,
+
       title: 'Habitt',
+
+
       theme: ThemeData(
+
         primarySwatch: Colors.blue,
+
+        scaffoldBackgroundColor:
+            Colors.white,
+
       ),
 
-      // First screen when app starts
-      home: const LoginScreen(),
 
-      // Named routes
+
+      home:
+          const LoginScreen(),
+
+
+
       routes: {
-        '/login': (context) => const LoginScreen(),
-        '/register': (context) => const RegisterScreen(),
+
+
+        '/login':
+            (context) =>
+                const LoginScreen(),
+
+
+
+        '/register':
+            (context) =>
+                const RegisterScreen(),
+
+
       },
+
+
     );
+
   }
+
 }
